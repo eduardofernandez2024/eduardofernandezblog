@@ -1,1 +1,1 @@
-https://antonytroya2011.github.io/bot/
+https://eduardofernandez2024.github.io/eduardofernandezblog/
