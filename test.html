@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <div class="hero_area" style="height: 795px;">
-        <header class="header_section">
+    <div class="hero_area" style="height: auto;">
+        <header class="header_section" style="height: auto;" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
@@ -60,7 +60,7 @@
             <h1><b>Quieres compartir algo conmigo</b></h1>
             <p>Escribeme !!!!!</p>
         </section>
-        <section class="hero_area" style="height: 500px;">
+        <section class="hero_area" style="height: auto;">
             <div class="col-md-6 offset-md-3"><br><br>
                 <form class="row g-4 needs-validation border border-dark border-3" id="contactForm">
                     <div class="col-md-12">
@@ -92,82 +92,87 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="mb-3">
-                                <label for="mensaje" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingrese su mensaje" required></textarea>
-                            </div>
-                        </div>
                         <div class="row">
-                            <div class="col-md-6 text-end">
-                                <button class="btn btn-danger " type="submit">Guardar</button>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <button class="btn btn-primary" type="button" id="limpiarCampos">Limpiar</button>
-                            </div>
-                        </div>
-                        <br>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </div><br><br>
-
-    <div class="modal fade text-dark " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edita todo lo que desees!!!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- Formulario con los mismos campos del formulario original -->
-                    <form class="row g-4 needs-validation " id="editForm">
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="editNombre" class="form-label">Nombre:</label>
-                                        <input type="text" class="form-control" id="editNombre" placeholder="Eduardo" title="Ingrese un nombre válido" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="editApellido" class="form-label">Apellido</label>
-                                        <input type="text" class="form-control" id="editApellido" title="Ingrese su apellido" placeholder="Fernández" required>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="editCorreo" class="form-label">Correo</label>
-                                        <input type="email" class="form-control" id="editCorreo" title="Ingrese una correo valido" placeholder="eduardo@gmail.com" required>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <label for="editContacto" class="form-label">Contacto</label>
-                                        <input type="tel" class="form-control" id="editContacto" placeholder="Ingrese el contacto" required>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <label for="editMensaje" class="form-label">Mensaje</label>
-                                    <textarea class="form-control" id="editMensaje" rows="4" placeholder="Ingrese su mensaje" required></textarea>
+                                    <label for="mensaje" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingrese su mensaje" required></textarea>
                                 </div>
-                            </div>                          
+                            </div>
+
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-success" id="guardarCambiosBtn">Guardar Cambios</button>
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-danger " type="submit">Guardar</button>
+                                <button class="btn btn-primary" type="button" id="limpiarCampos">Limpiar</button>
+                            </div><br><br>
+                        </div>
+                    </div>
+                </form><br><br>
+            </div>
+        </section>
+    </div>
+    <section><br><br>
+        <div class="col-md-12"> 
+            <div class="modal fade text-dark " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edita todo lo que desees!!!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Formulario con los mismos campos del formulario original -->
+                            <form class="row g-4 needs-validation " id="editForm">
+                                <div class="col-md-12">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="editNombre" class="form-label">Nombre:</label>
+                                                <input type="text" class="form-control" id="editNombre" placeholder="Eduardo" title="Ingrese un nombre válido" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="editApellido" class="form-label">Apellido</label>
+                                                <input type="text" class="form-control" id="editApellido" title="Ingrese su apellido" placeholder="Fernández" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="editCorreo" class="form-label">Correo</label>
+                                                <input type="email" class="form-control" id="editCorreo" title="Ingrese una correo valido" placeholder="eduardo@gmail.com" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="editContacto" class="form-label">Contacto</label>
+                                                <input type="tel" class="form-control" id="editContacto" placeholder="Ingrese el contacto" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label for="editMensaje" class="form-label">Mensaje</label>
+                                            <textarea class="form-control" id="editMensaje" rows="4" placeholder="Ingrese su mensaje" required></textarea>
+                                        </div>
+                                    </div>                          
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" id="guardarCambiosBtn">Guardar Cambios</button>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    
+    
     
 
     <section>
