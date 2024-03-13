@@ -3,7 +3,10 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
 }
-
+.su{
+  color: #0fcfdc;
+  
+}
 .custom-background {
   position: relative;
   overflow: hidden;
